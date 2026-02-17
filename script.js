@@ -106,8 +106,69 @@
 //     console.log(i)
 // }
 
-for (let i = 1; i <=20; i++){
-    if( i % 2 === 1){
-        console.log(i);
-    }
-}
+// qn6
+// let sum = 0;
+
+// for (let i = 1; i <= 100; i++) {
+//     sum = sum + i;
+// }
+// console.log(sum);
+
+
+// qn7
+// for(let i =1; i <=50; i++) {
+//     if(i%3 === 0){
+//     console.log(i);
+// }                                 
+// }
+
+// qn8
+// let val = prompt ("Give a number")
+
+// for(let i=1; i<=val; i++){
+//     if(i%2 ===0){
+//         console.log(`${i} is even`)
+//     }else{
+//         console.log(`${i} is odd`)
+//     }
+// }
+
+
+// qn9
+//  for (let i=1; i<=100; i++){
+//     if(i%3 ===0 && i%5 ===0){
+//         console.log(i);
+//     }
+//  }
+
+// break and continue 
+// for(let i=1; i<=100; i++){
+//         console.log(i)
+
+//     if(i % 7 ===0){
+//         break;
+//     }
+    
+// }
+
+// qn2
+// for(let i=1; i<=20; i++){
+//     if(i%3 ===0){
+//         continue
+//     }
+//     console.log(i);
+// }
+
+// let count =0;
+// for(i=1; i<=100; i++){
+//     if(i%2 ===1)  {
+//         count ++;
+//         console.log(i);
+//     }
+//     if(count ===5) break;
+
+// }
+
+
+// FUNCTION
+
