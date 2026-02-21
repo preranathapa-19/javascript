@@ -1,178 +1,98 @@
-// this is the hoisting concept in the function decleratiion/statement
-// parrot();
+// let x = 8;
+// let y = 3;
 
-
-
-
-
-// function parrot(){
-//     console.log("samipab fav bird")
-// }
-
-
-// fun expression in the hoisting method
-// parrot();
-
-
-
-// let parrot= function(){
-//     console.log("my fav bird")
-// }
-
-
-// qn. convert this into the arrow fun
-// function multiply(a,b){
-//     return a * b;
-// }
-
-
-// let multiply = (a,b) =>{
-//     return a * b;
-// };
-
-// function abcd( a,b,c,...val){
-//     console.log(val);
-
-// }
-// abcd(1,2,3,4,5,6);
-
-
-// function rest(...scores){
-//     let total= 0;
-    
-//     scores.forEach(function(val){
-//         total = total + val;
-//     });
-   
-// return total;
-// }
-
-// console.log(rest(12,34,54,36,43));
-
-
-// var a=23;
-// console.log(a);
-
-// if (true) {
-//   var age = 25;
-// }
-
-// console.log(age);
-
-// console.log(b);
-// var b = 12;
-
-
-// console.log(b);
-// const b = 12;
- 
-// console.log(b);
-// let b = 12;
-
-// var x = 10;
-// var x = 20;
+// x+=2;
 // console.log(x);
 
-// let y = 10;
-// let y = 20;
+// y*=4;
 // console.log(y);
 
-// if (true) {
-//   var age = 25;
+// if(x % y === 0){
+//     console.log("divisible");
+// } else {
+//     console.log(" Not divisible");
+    
 // }
-// console.log(age);
-
-// if (true) {
-//   let city = "Delhi";
-// }
-// console.log(city);
+ 
+// console.log( x > y);
 
 
-// const user = { name: "Aman" };
-// user.name = "Rohit";
-// console.log(user.name);
+// let a = 25;
+// let b = 6;
 
-
-
-
-// if (true) {
-//   let city = "Delhi";
-// console.log(city);
-// }
-
-
-
-//  OPERATORS
-
-// let a = 8
-// let b = 3
-// console.log(a+b);
-// console.log(a-b);
-// console.log(a*b);
 // console.log(a/b);
 // console.log(a%b);
+// console.log(a*b);
+// console.log(a-b);
 
+// let num = 17;
+//  if (num % 2 === 0) {
+//  console.log("its a odd number");
+//  } else {
+//     console.log("its a odd number");
+//  }
+
+// let num = 30;
+// if(3%30 === 0 && 4%30 === 0){
+// console.log("divisible by both")
+// } else {
+//     console.log("Not divisible by both")
+// }
+
+// let x = 12;
+// let y = 20;
+
+// console.log(x < y);
+// console.log(x == y);
+// console.log(x != y);
+
+// let age = 8;
+// if (age<=18){
+//     console.log("adult")
+// }else {
+//     console.log("minor")
+// }
+
+// let num = 45;
+// if(num > 10 && num <20){
+// console.log("Number is between 10 and 20");
+// } else {
+//     console.log("Number is Not between 10 and 20");
+// }
 
 // let x = 5;
+// let y = 10;
 
-// x+=3;
-// console.log("After adding 3:", x);
+// x+= 5;
+// console.log(x);
 
-// x-=4
-// console.log("After subtracting 4:", x);
-
-// x *= 2;
-// console.log("Multiply by 3:", x);
+// console.log(5 == "5"); true
+// console.log(5 === "5"); false
 
 
-// LOGICAL OPERATOR
-//  let a= true;
-//  let b= false;
 
-//  console.log(a && b);
-//  console.log(a || b);
-//  console.log(!a);
-//  console.log(!b);
-
-//COMPARISION OPERATOR
-// console.log(10>4);
-// console.log(7<3);
-// console.log(4>4);
-// console.log(1>4);
-// console.log(6>4);
-
-// let num1 = 15;
-// let num2 = 4;
-
-// if(num1%num2 === 0){
-//     console.log("divisible");
-// }else{
-//         console.log("NOt divisible");
-
-
+// let marks = 98;
+ 
+// if ( marks >=90){
+//     console.log("A")
+// } else if (marks >= 75){
+//     console.log("B")
+// } else {
+//     console.log("C")
 // }
 
 
-//ARTHMETIC OPERATOR
-// let num1 = 12;
-// let num2 = 5;
-
-// console.log(num1+num2);
-// console.log(num1-num2);
-// console.log(num1*num2);
-// console.log(num1/num2);
-// console.log(num1%num2);
 
 
-// Assignment operator 
+// If divisible by 2 → print "Fizz"
+// If divisible by 3 → print "Buzz"
+// If divisible by both → print "FizzBuzz"
+// let num = 1;
 
-// let x = 10;
-
-// x += 7;
-// console.log("add by 7:", x)
-
-// x /= 3;
-// console.log("divided by 3:", x)
-
-// x *= 4;
-// console.log("multiply by 4:", x)
+// if(num %2 === 0){
+//     console.log("Fizz");
+// } else if (num%3 === 0){
+//     console.log("Buzz");
+// } else{
+//     console.log("FIzBuzz");
+// }
