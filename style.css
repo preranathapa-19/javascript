@@ -1,0 +1,11 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex wrap;
+    color: rgb(24, 145, 28);
+}
+
+button{
+    height: 60px;
+    width: 90px;
+    background-color: rgb(233, 143, 158);
+}
