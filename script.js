@@ -92,7 +92,7 @@
 //     console.log(row);
 // }
 
-// 🟢 Question 7 – Multiplication Table (num = 7)
+//  Question 7 – Multiplication Table (num = 7)
 
 // for(let i=1; i<=10; i++){
 //     console.log(7*i)
@@ -120,3 +120,60 @@
 // }
 
 // console.log(sum);
+
+
+// loop questione
+
+// 1️⃣ Print numbers from 1 to 20
+
+// for (let i=1; i<=20; i++){
+//     console.log(i);
+// }
+
+// 2️⃣ Print numbers from 20 to 1 (reverse)
+// for(let i=20; i>=1;i--){
+//     console.log(i);
+// }
+
+// 3️⃣ Print only even numbers from 1 to 50
+
+// for(let i=1; i<=50; i++){
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+// }
+
+// 4️⃣ Print only odd numbers from 1 to 50
+
+// for(let i=1; i<=50; i++){
+//     if(i%2 === 1){
+//         console.log(i);
+//     }
+// }
+
+// 5️⃣ Print the table of 7
+
+// for(let i=1; i<=10; i++){
+//     console.log(`7*${1} = ${7*i}`)
+// }
+
+// 6️⃣ Find the sum of numbers from 1 to 100
+
+// let sum= 0;
+// for(let i=1; i<=100; i++){
+//     if(sum = sum + i){
+
+// }
+// }
+//         console.log(sum);
+
+
+    
+// 7️⃣ Find the factorial of a number (user gives number)
+
+// let num = 5;
+// let factorial = 1;
+// for(let i=1; i<=num; i++){
+//     factorial= factorial*i;
+// }
+// console.log(factorial);

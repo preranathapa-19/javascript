@@ -1,6 +1,6 @@
 h1{
     font-family: 'Times New Roman', Times, serif;
-    display: flex wrap;
+    display: flex ;
     color: rgb(24, 145, 28);
 }
 
@@ -8,4 +8,13 @@ button{
     height: 60px;
     width: 90px;
     background-color: rgb(233, 143, 158);
+    
+}
+
+
+h2{
+    color: rgb(92, 92, 22);
+    display: flex;
+
+
 }
