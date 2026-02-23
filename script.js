@@ -177,3 +177,44 @@
 //     factorial= factorial*i;
 // }
 // console.log(factorial);
+
+
+// for (let num = 2; num <= 20; num++) {
+
+//   let isPrime = true;
+
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+
+//   if (isPrime) {
+//     console.log(num);
+//   }
+
+
+// for (let marks = 30; marks <= 100; marks += 10) {
+
+//   if (marks >= 90) {
+//     console.log(marks + " → Excellent");
+//   } else if (marks >= 75) {
+//     console.log(marks + " → Good");
+//   } else if (marks >= 50) {
+//     console.log(marks + " → Average");
+//   } else {
+//     console.log(marks + " → Fail");
+//   }
+
+// }
+
+// let sum = 0;
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     sum += i;
+//   }
+// }
+
+// console.log(sum);
