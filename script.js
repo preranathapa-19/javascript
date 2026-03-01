@@ -156,3 +156,17 @@
 // }
 
 // console.log(countEvenNumbers([1,2,3,4,5,6])); // 3
+
+// Create function to count odd numbers in array.
+
+// function oddnumber(array){
+//     let score = 0;
+//     for(let i=0; i<array.length; i++){
+//         if(array[i]%2 !==1){
+//             score++;
+//         }
+//     }
+//     return score;
+// }
+
+// console.log(oddnumber([23,21,4,45,6,1,65,33,22,44,522]));

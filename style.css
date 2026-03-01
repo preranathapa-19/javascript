@@ -18,3 +18,9 @@ h2{
 
 
 }
+
+p{
+    display: flex;
+    font-family: Arial;
+    color:rgb(67, 7, 93) ;
+}
