@@ -170,3 +170,118 @@
 // }
 
 // console.log(oddnumber([23,21,4,45,6,1,65,33,22,44,522]));
+
+// function double(val){
+//     return val * 2;
+// }
+// console.log(double(4));
+
+// use IIFE to isolate variable (for the secret varibale)
+// (function(){
+//     const password = "secret password";
+//     console.log(password);
+// }) ();
+
+
+
+//started the Arrays
+ 
+// let fruits = ["banana", "apple", "mango"];
+// fruits["apple"]
+
+// let arr =[1,2,3,4,5,6];
+
+
+// let arr= [2,4,5,6,7];
+
+
+
+//array methods
+
+// let array = [2,34,5,6,77,2];
+// array.push(23);  add the new value in that array 
+
+
+// modify
+// let arr =[1,2,3,4,5,6];
+// arr.pop(5);
+// arr.shift();
+// arr.unshift(1);
+// arr.splice(1,3);
+// arr.reverse();
+// let newarr = arr.slice(0,3);
+
+
+
+// let arr = [2,45,67,22,45,56];
+// let sr = arr.sort(function (a,b){
+//     return a - b;  //it reutrn the arr in the ascending order
+// }
+// )
+
+// let arr = [2,45,67,22,45,56];
+// let sr = arr.sort(function (a,b){
+//     return b-a;  //it reutrn the arr in the desc order
+// }
+// )
+
+
+//FOREACH
+// let arr = [11,62,3,4,25];
+
+// arr.forEach(function(val){
+//     console.log(val + 5);
+
+// })
+
+// let arr = [11,62,3,4,25];
+
+// arr.forEach(function(val){
+//     console.log(val);
+
+// })
+
+
+//Map = when u want to make the new array with the basis of old array data
+// = when u see the map make the blank array 
+
+// let arr = [11,62,3,4,25];
+
+// let newarr=arr.map(function(val){
+// return 12;
+// })
+
+//   you have to return the map for the midfied value
+
+
+// let arr = [11,62,3,4,25];
+
+// let newarr = arr.map(function(val){
+//     if (val >10) return val; // it will show the undefined
+// });
+
+//filter
+// let arr= [1,2,3,4,5,6,7,8];
+
+// let newarr =arr.filter(function (val){
+// if (val > 4) return true;
+
+// });
+
+// let arr= [1,2,3,4,5,6,7,8];
+
+// let newarr =arr.filter(function (val){
+// if (val > 6) return true;
+
+// });
+
+
+//reduce  = reduces the array to a single value.
+
+// let arr= [1,2,3,4,5,6,7];
+
+// let ans = arr.reduce(function(accumulator, val) {
+//     return accumulator + val;
+
+// }, 0);
+
