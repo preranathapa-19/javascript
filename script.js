@@ -139,10 +139,100 @@
 // };
 
 //from the object below, print the lalitude;
-const locations ={
-    city: "bhopal",
-    coordinates:{
-        lat: 23.4,
-        lng : 77.8
-    }
-};
+// const locations ={
+//     city: "bhopal",
+//     coordinates:{
+//         lat: 23.4,
+//         lng : 77.8
+//     }
+// };
+
+
+// what will happen if  coordinates is missing?
+//  how can you prevent errors? 
+
+// const locations ={
+//     city: "bhopal",
+//     coordinates:{
+//         lat: 23.4,
+//         lng : 77.8
+//     }
+// };
+// locations?.coordinates?.lat
+
+
+//destructure the city and lat from the loction object above.
+
+// const locations ={
+//     city: "bhopal",
+//     coordinates:{
+//         lat: 23.4,
+//         lng : 77.8
+//     }
+// };
+// let {city}=locations;
+// let {lat}= locations.coordinates;
+
+
+// const user ={
+//     "first-name": "samipab",
+// }
+
+// let {"first-name": firstname } =user;
+
+
+//use fot-in to log all keys in this object:
+
+// const course = {
+//     title : "javascript",
+//     duration: "4 weeks",
+// };
+
+// for(let key in course){
+//     console.log(key);
+// }
+
+// use object.entries() to print all key-value pairs as:
+// title: javascript
+// duration: 4 weeks
+
+// const course ={              ===very hard to understood
+//     title: "javascript",
+//     duration:"4 weeks"
+// };
+// Object.entries(course).forEach(function(val){
+//     console.log(val[0]+":"+val[1]);
+// });
+
+
+
+//i used the spread operators
+// const original ={a:1, b:2};
+// const org2={...original};
+
+
+// const obj1 ={info: {score:80}};
+// const clone ={...obj1};
+// clone.info.score =100;
+// console.log(obj1.info.score);   //what is problem in this
+
+//deep clone the obj1 safely.
+// const obj1 ={info: {score:80}};
+// let newobj= JSON.parse(JSON.stringify(obj1));
+// newobj.info.score =100;
+
+//  Rewrite this safely using optional chaining
+
+// const person = {};
+// console.log(person?.profile?.name);
+
+
+//use a variable to dynamically assign a property
+// const key ="role";
+// let obj = {
+//     name: "samipab",
+//     [key]: "admin",
+// };
+
+
+//finally 8hrs about the js jaya harsh bhaiya and mine samipab bhaiya mero fav bhaiya
