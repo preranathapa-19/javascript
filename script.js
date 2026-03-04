@@ -1,238 +1,99 @@
-// Object
+//practice question from the array and the object
 
-// let student = {
-//     name:"samipab",     //key value structure
-//     age : 21,
-//     country : "nepal"
+// Create an array of 5 numbers. Print the sum of all numbers
+
+// const numbers =[23,44,52,43,22];
+// let sum = 0;
+// for(let number of numbers){
+//     sum +=number;
 // }
-
-//nesting and deep access
-//  const user = {
-//     name : "samip",
-//     address:{
-//         city:"pokhara",
-//         pin : 8898,    //this all are nesting 1 keh bath ek
-//         location:{
-//             lat:23,
-//             lng:77.2,
-//         },
-//     },
-//  };
-
-//  user.address.location.lng;  // this is is deep access
-//   user.address.location.lat;
+// console.log(sum);
 
 
-// can break this in variables
-// let {lat, lng} = user.address.location;   //this sis object destructuring
+//create an object
 
-   
+// const student ={
+//     name:"samipab",
+//     roll: 1,
+//     marks: 44
 
-
-//looping
-// let obj={
-//     name: "samip",
-//     age : 22,
-//     email: "sami@gmail.com",
 // };
+// console.log(student.marks);
 
-// for (let key in obj) {
-//     console.log(key);   // we get the key of the object
+//create an array of students
+
+// const students=[
+//  {name: "samipab", marks: 80},
+//  {name: "peru", marks: 60},
+//  {name: "prerana", marks: 90}
+// ];
+
+// for(let student of students){
+// if(student.marks >70){
+//     console.log(student.name);
+// }
 // }
 
-// for (let key in obj) {
-//     console.log(obj[key]);   //it will give the value of the key
-// }
+// Find the highest marks from the above array.
+// const students=[
+//  {name: "samipab", marks: 80},
+//  {name: "peru", marks: 60},
+//  {name: "prerana", marks: 90}
+// ];
 
+// let highest= students[0].marks;
 
-// for (let key in obj) {
-//     console.log(key, obj[key]);   //it will give the value of the key and the value both
-// }
-
-// let obj ={
-//     name: "samip",
-//     age : 22,
-//     email: "sami@gmail.com",
-// };
-
-
-// Object.keys(obj);  = it keeps the object key into the array
-// Object.entries(obj);  = it makes the array of array
-
-
-
-// let obj ={
-//     name: "samip",
-//     age : 22,
-//     email: "sami@gmail.com",
-// };
-
-// let obj2 = {...obj};   == spread 
-
-// let obj2 = Object.assign({}, obj);  =Object.assign 
-// let obj2 = Object.assign({price: Infinity}, obj); 
-
-
-
-//deep clone
-// let obj ={
-//     name: "samip",
-//     age : 22,
-//     email: "sami@gmail.com",
-//     address:{
-//         city:"pokhara"
+// for(let i= 0; i<students.length; i++){
+//     if(students[i].marks>highest){
+//         highest = students[i].marks;
 //     }
-// };
-
-// let obj2 = JSON.parse(JSON.stringify(obj));
-
-// obj?.address?.city  =this will not give error if the value is there than 
-// it provide the value then no error or give undefined
-// this is optional chaining
-
-
-//computer properties
-// let role="admin";
-
-// let obj ={
-//     name: "samip",
-//     age : 22,
-//     email: "sami@gmail.com",
-//     address:{
-//         city:"pokhara"
-//     },
-//     [role]:"harsh",
-// };
-
-
-
-//questions
-//create an object for a student with name, age, and isenrolles.
-
-// let student={
-//     name: "samipab",
-//     age : 21,
-//     isenrolled: true,
-// };
-
-//can an object key be a number or boolean? try this
-//  const obj ={
-//     true: "yes",
-//     42: "answer"
-//  };
-//  console.log(obj[true]);
-//  console.log(obj[42]);
-
-//access the value of firstname from the object
-
-// const user = {
-//     "first-name": "samipap",
-// };
-// user["first-name"]
-
-
-//dynamic key let key = :age, how will you access user [key]?
-
-// let key ="age";
-// const user ={
-//    age:20,
-// };
-
-//from the object below, print the lalitude;
-// const locations ={
-//     city: "bhopal",
-//     coordinates:{
-//         lat: 23.4,
-//         lng : 77.8
-//     }
-// };
-
-
-// what will happen if  coordinates is missing?
-//  how can you prevent errors? 
-
-// const locations ={
-//     city: "bhopal",
-//     coordinates:{
-//         lat: 23.4,
-//         lng : 77.8
-//     }
-// };
-// locations?.coordinates?.lat
-
-
-//destructure the city and lat from the loction object above.
-
-// const locations ={
-//     city: "bhopal",
-//     coordinates:{
-//         lat: 23.4,
-//         lng : 77.8
-//     }
-// };
-// let {city}=locations;
-// let {lat}= locations.coordinates;
-
-
-// const user ={
-//     "first-name": "samipab",
 // }
 
-// let {"first-name": firstname } =user;
+// console.log(highest);
 
 
-//use fot-in to log all keys in this object:
+// const students=[
+//  {name: "samipab", marks: 80},
+//  {name: "peru", marks: 60},
+//  {name: "prerana", marks: 90}
+// ];
 
-// const course = {
-//     title : "javascript",
-//     duration: "4 weeks",
-// };
+// let highest = 0;
 
-// for(let key in course){
-//     console.log(key);
+// for(let high of students){
+//     if(high.marks>highest){
+//        highest = high.marks;
+//     }
 // }
-
-// use object.entries() to print all key-value pairs as:
-// title: javascript
-// duration: 4 weeks
-
-// const course ={              ===very hard to understood
-//     title: "javascript",
-//     duration:"4 weeks"
-// };
-// Object.entries(course).forEach(function(val){
-//     console.log(val[0]+":"+val[1]);
-// });
+// console.log("highest marks:", highest);
 
 
 
-//i used the spread operators
-// const original ={a:1, b:2};
-// const org2={...original};
+// const cart=[
+//  {item: "Shoes", price: 2000},
+//  {item: "Bag", price: 1500},
+//  {item: "Watch", price: 3000}
+// ];
 
+// let sum = 0;
 
-// const obj1 ={info: {score:80}};
-// const clone ={...obj1};
-// clone.info.score =100;
-// console.log(obj1.info.score);   //what is problem in this
+// for (let item of cart){
+//     sum+=cart.price;
+// }
+// console.log(sum);
 
-//deep clone the obj1 safely.
-// const obj1 ={info: {score:80}};
-// let newobj= JSON.parse(JSON.stringify(obj1));
-// newobj.info.score =100;
+// Count how many products cost more than 2000.
+// const cart = [
+//     {item: "Shoes", price: 2000},
+//     {item: "Bag", price: 1500},
+//     {item: "Watch", price: 3000}
+// ];
+// let count = 0;
 
-//  Rewrite this safely using optional chaining
+//  for(let product of cart){
+//     if(product.price>2000){
+//         count++;
+//     }
+//  }
+//  console.log(count);
 
-// const person = {};
-// console.log(person?.profile?.name);
-
-
-//use a variable to dynamically assign a property
-// const key ="role";
-// let obj = {
-//     name: "samipab",
-//     [key]: "admin",
-// };
-
-
-//finally 8hrs about the js jaya harsh bhaiya and mine samipab bhaiya mero fav bhaiya
