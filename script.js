@@ -97,3 +97,72 @@
 //  }
 //  console.log(count);
 
+
+// Find Average Marks
+// const students = [
+//   {name: "Asha", marks: 80},
+//   {name: "Rohan", marks: 70},
+//   {name: "Mina", marks: 90}
+// ];
+
+// let total = 0;
+
+// for(let student of students){
+//     total+=student.marks;
+
+// }
+
+// let average = total / students.length;
+
+// console.log("Average MArks:", average);
+
+
+// Find Average Marks  passing marks = 75
+// const students = [
+//   {name: "Asha", marks: 80},
+//   {name: "Rohan", marks: 70},
+//   {name: "Mina", marks: 90}
+// ];
+// let count = 0;
+
+// for (let student of students){
+//     if(student.marks>75);
+//     count++;
+// }
+// console.log(count);
+
+
+// 🟢 QUESTION 3 – Find Cheapest Product
+// const products = [
+//   {item: "Shoes", price: 2000},
+//   {item: "Bag", price: 1500},
+//   {item: "Watch", price: 3000}
+// ];
+
+// let cheapest =products[0];
+
+// for (let product of products){
+//     if(product.price<cheapest.price){
+//         cheapest=product;
+//     }
+// }
+
+// console.log("Cheapest price:", cheapest.item);
+
+//price range between 1500 n 2500
+const products = [
+  {item: "Shoes", price: 2000},
+  {item: "Bag", price: 1500},
+  {item: "Watch", price: 3000}
+];
+
+let cheapest =products[0];
+
+for (let product of products){
+ 
+   if(product.price>1500 && product.price<2500){
+console.log(product.item);
+
+   }
+
+}
