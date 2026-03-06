@@ -5,6 +5,9 @@ h1{
 }
 
 button{
+    display: flex;
+    align-items: center;
+    gap: 200px;
     height: 60px;
     width: 90px;
     background-color: rgb(233, 143, 158);
@@ -23,4 +26,13 @@ p{
     display: flex;
     font-family: Arial;
     color:rgb(67, 7, 93) ;
+}
+
+#js{
+  display: inline-block;
+  width: 300px;
+    height: 100px;
+    margin: 20px
+
+
 }

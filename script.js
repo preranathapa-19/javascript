@@ -1,58 +1,38 @@
-// 1️ Print all student names
-// 2️ Print students who passed (>= 70)
-// 3️ Find highest marks
-// 4️ Find average marks
+//practice question
+// Create an array of fruits and print each fruit using a loop.
+
+// const fruis = ["apple","banana","kiwi","grapes"];
+// console.log(fruis);
 
 
-const students = [
-
-  {name: "Asha", marks: 80},
-  {name: "Rohan", marks: 65},
-  {name: "Mina", marks: 90},
-  {name: "Sita", marks: 55}
-];
-
-// 1
-// console.log(" All students");
-// for(let student of students){
-//     concole.log(student.name);
+//sum
+// const numbers = [10, 20, 30, 40];
+// let sum = 0;
+// for(let number of numbers){
+//     sum+=number;
 // }
 
-// 2
-// for(let student of students){
-//     if(student.marks>=70){
-//         console.log(student.name);
+// console.log("total:", sum);
+
+// Find the largest number in the array.
+// const nums = [5, 12, 8, 20, 3];
+
+// let largest=nums[0];
+
+// for(let num of nums){
+//     if(num>largest){
+//         largest= num;
 //     }
 // }
+// console.log("largest number:", largest)
 
-//3
-// let highest = students[0].marks;
-// for(let student of students){
-//     if(student.marks>highest){
-//         highest = student.marks;
-//     }
-// }
-// console.log("highest marks:", highest);
+// Count how many even numbers are in the array.
+const numbers = [1,2,3,4,5,6,7,8];
 
-//4
-// let total = 0;
-
-// for(let student of students){
-//     total+= student.marks;
-// }
-
-// let average = total / students.length;
-
-// console.log("Average Marks:", average);
-
-
-
-// Count how many students failed (< 70)
-
-let failcount =0;
-for(let student of students){
-    if(student.marks<70){
-    failcount++;
+let Count = 0;
+for(let num of numbers){
+    if(num % 2 === 0){
+        Count++;
+    }
 }
-}
-console.log("Student Fail:", failcount);
+console.log("even number:", Count);
