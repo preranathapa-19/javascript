@@ -78,6 +78,7 @@
 // const scores = [30, 60, 80, 40, 90];
 //  let count = 0;
 
+
 //  for(let score of scores){
 //     if(score <50){
 //         count++;
@@ -86,3 +87,51 @@
 
 //  console.log("count:", count);
 
+
+
+// 1️⃣ Print all elements
+// let fruits = ["apple", "banana", "mango", "orange"];
+// console.log(fruits);
+
+// Count numbers greater than 50
+// let numbers = [10, 60, 45, 80, 30, 90];
+
+// let count = 0;
+// for(let number of numbers){
+//     if(number<50){
+//         count++;
+//     }
+// }
+// console.log(count);
+
+// 3️⃣ Find the total sum
+
+// let marks = [70, 80, 90, 60];
+
+// let sum =0;
+// for(let mark of marks){
+//     sum+=mark;
+// }
+
+// console.log(sum);
+
+
+// Find the largest number
+// let nums = [12, 45, 7, 89, 23];
+
+// let largest =nums[0];
+
+// for(let num of nums){
+//     if(num>largest){
+//         largest=num;
+//     }
+
+// }
+// console.log("largest number:", largest);
+
+
+let student = {
+    name: "Ram",
+    age: 20,
+    city: "Pokhara"
+};
