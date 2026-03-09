@@ -1,137 +1,123 @@
-//practice question
-// Create an array of fruits and print each fruit using a loop.
 
-// const fruis = ["apple","banana","kiwi","grapes"];
-// console.log(fruis);
+// Print all numbers
+//  let numbers = [10,20,30,40,50];
+//  console.log(numbers);
 
-
-//sum
-// const numbers = [10, 20, 30, 40];
-// let sum = 0;
-// for(let number of numbers){
-//     sum+=number;
-// }
-
-// console.log("total:", sum);
-
-// Find the largest number in the array.
-// const nums = [5, 12, 8, 20, 3];
-
-// let largest=nums[0];
-
-// for(let num of nums){
-//     if(num>largest){
-//         largest= num;
-//     }
-// }
-// console.log("largest number:", largest)
-
-// Count how many even numbers are in the array.
-// const numbers = [1,2,3,4,5,6,7,8];
-
-// let Count = 0;
-// for(let num of numbers){
-//     if(num % 2 === 0){
-//         Count++;
-//     }
-// }
-// console.log("even number:", Count);
-
-// Print the last number from the array
-// const numbers = [10, 20, 30, 40, 50];
-// console.log(numbers[numbers.length -1]);
-
-// Find the product (multiplication) of all numbers.
-// const nums = [2, 3, 4];
-// let product = 1;
-
-// for(let num of nums){
-//     product*=num;
-// }
-
-// console.log(product);
-
-
-// 4 – Print Only Odd Numbers
-
-// const numbers = [1,2,3,4,5,6,7,8];
-
-// for(let number of numbers){
-//     if(number%2 ===1){
-//          console.log(number);
-//     }
-//  }
-
-
-// const nums = [25, 10, 40, 5, 30];
-
-// let smallest =nums[0];
-
-// for(let num of nums){
-//     if(num<smallest){
-//         smallest = num;
-//     }
-// }
-// console.log("smallest number:", smallest);
-
-// Count Numbers Greater Than 50
-// const scores = [30, 60, 80, 40, 90];
-//  let count = 0;
-
-
-//  for(let score of scores){
-//     if(score <50){
-//         count++;
-//     }
-//  }
-
-//  console.log("count:", count);
-
-
-
-// 1️⃣ Print all elements
-// let fruits = ["apple", "banana", "mango", "orange"];
-// console.log(fruits);
-
-// Count numbers greater than 50
-// let numbers = [10, 60, 45, 80, 30, 90];
-
-// let count = 0;
-// for(let number of numbers){
-//     if(number<50){
-//         count++;
-//     }
-// }
-// console.log(count);
-
-// 3️⃣ Find the total sum
-
-// let marks = [70, 80, 90, 60];
+// Find total sum
+// let nums =[5,20,25,30];
 
 // let sum =0;
-// for(let mark of marks){
-//     sum+=mark;
-// }
-
-// console.log(sum);
-
-
-// Find the largest number
-// let nums = [12, 45, 7, 89, 23];
-
-// let largest =nums[0];
 
 // for(let num of nums){
-//     if(num>largest){
-//         largest=num;
-//     }
+//     sum+=num         
 
 // }
-// console.log("largest number:", largest);
+// console.log("total sum:", sum);
 
 
-let student = {
-    name: "Ram",
-    age: 20,
-    city: "Pokhara"
-};
+// Count how many even numbers are in the array.
+// let arr = [2,5,8,11,14];
+
+// let count = 0;
+
+// for (let ar of arr){
+//     if(ar%2 ===0){
+//         count++;
+
+//     }
+// }
+// console.log("even numbers:", count);
+
+
+
+// 👉 Print the largest number.
+// let nums = [12,45,7,89,23];
+
+// let largest = 0;
+
+// for(let num of nums){
+//     if(num >largest){
+//         largest=num;
+//     }
+//     }
+
+// console.log("largest number:,", largest);
+
+//print numbers greater than 25
+// let nums =[10,30,20,40,15];
+
+// for(let num of nums){
+//     if(num>25){
+//         console.log("greater number than 25:", num);
+//     }
+// }
+
+// let student = {
+//     name: "samipab",
+//     age: 21,
+//     city: "Pokhara"
+// };
+
+
+// console.log(student.city);
+// console.log(student.name);
+// console.log(student.age);
+
+// 👉 Change price to 2500 and print it.
+
+// let product = {
+//     name: "Watch",
+//     price: 2000
+// };
+// product.price=2500
+// console.log(product.price);
+
+
+//  Print all keys and values using a loop.
+
+// let car = {
+//     brand: "Toyota",
+//     model: "Corolla",
+//     year: 2022
+// };
+
+// for(let key in car){
+//     console.log(key,car[key]);
+// }
+
+
+// 👉 Print all student names.
+
+// let students = [
+//     {name: "Ram", marks: 80},
+//     {name: "Sita", marks: 65},
+//     {name: "Hari", marks: 90}
+// ];
+
+// console.log(students[1].name);   for one key value
+
+// for(let student of students){
+//     console.log(student.name);
+// }
+
+// for (let student of students){
+//     console.log(student.marks);
+// }
+
+
+// 👉 Find the total price of all items.
+
+let cart = [
+    {item: "Shoes", price: 2000},
+    {item: "Bag", price: 1500},
+    {item: "Watch", price: 3000}
+];
+
+let total = 0;
+
+for(let carts of cart){
+    total+=carts.price
+
+
+}
+console.log("totalprice of all items:", total);
