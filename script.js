@@ -1,123 +1,153 @@
+//print all the element
 
-// Print all numbers
-//  let numbers = [10,20,30,40,50];
-//  console.log(numbers);
+// let numbers = [10,20,30,40,50];
+// for(let num of numbers){
+//     console.log(num);
 
-// Find total sum
-// let nums =[5,20,25,30];
 
-// let sum =0;
+// let numbers = [10,20,30,40,50];
+
+// let sum = 0;
+
+// for(let number of numbers){
+//     sum+=number;
+// }
+// console.log(sum);
+
+
+// 👉 Print the array in reverse order.
+
+// let arr = [1,2,3,4,5];
+
+// let reversed= arr.reverse();
+
+// console.log(reversed);
+
+
+// Second Largest Number
+
+// let arr= [10,20,30,40,50];
+
+// arr.sort((a,b) => b-a);
+
+// console.log("second largest:", arr[0]);
+
+
+// 👉 Print the smallest number.
+
+// let nums = [45,12,78,3,25];
+
+// let smallest = nums[0];
 
 // for(let num of nums){
-//     sum+=num         
-
-// }
-// console.log("total sum:", sum);
-
-
-// Count how many even numbers are in the array.
-// let arr = [2,5,8,11,14];
-
-// let count = 0;
-
-// for (let ar of arr){
-//     if(ar%2 ===0){
-//         count++;
-
+//     if(num<smallest){
+//         smallest= num;
 //     }
 // }
-// console.log("even numbers:", count);
+// console.log("samllest number:", smallest);
 
 
+// let nums= [23,45,64,24,56,61];
 
-// 👉 Print the largest number.
-// let nums = [12,45,7,89,23];
-
-// let largest = 0;
+// let highest = nums[0];
 
 // for(let num of nums){
-//     if(num >largest){
-//         largest=num;
-//     }
-//     }
-
-// console.log("largest number:,", largest);
-
-//print numbers greater than 25
-// let nums =[10,30,20,40,15];
-
-// for(let num of nums){
-//     if(num>25){
-//         console.log("greater number than 25:", num);
+//     if(num > highest){
+//         highest= num;
 //     }
 // }
+
+// console.log("highest number:", highest);
+
+// let book = {
+// title:"JS Basics",
+// author:"John",
+// price:500
+// };
+
+// for(let key in book){
+// console.log(key);
+// }
+
+// for(let key in book){
+// console.log(key + book[key]);
+// }
+
+// let nums = [1,2,3,4];
+
+// let double = 0;
+// for(let num of nums){
+//   console.log(num*2);
+
+// }
+
+
+// let phone = {
+// brand:"Samsung",
+// model:"A52",
+// price:30000
+// };
+
+// for(let key in phone)
+// console.log(phone[key]);
+
+// let numbers = [1,2,3,4,5];
+
+// for(let number of numbers){
+//     console.log(number * number);
+// }
+
+// let arr = [1,2,3,4,5];
+
+// console.log(arr.length);
+
+// let arr = [10, 30, 20, 40, 15,44,67];
+ 
+// let greater = 25;
+
+// for(let arrs of arr){
+//     if(arrs>greater){
+// console.log(arrs);
+
+//     }
+// }
+
 
 // let student = {
-//     name: "samipab",
-//     age: 21,
-//     city: "Pokhara"
-// };
+//     name:"Hari",
+//      age:22
+//     };
+// student.city = "pokhara";
+// student.roll= 34;
+// student.marks = 80;
+// console.log(student);
 
-
-// console.log(student.city);
-// console.log(student.name);
-// console.log(student.age);
-
-// 👉 Change price to 2500 and print it.
-
-// let product = {
-//     name: "Watch",
-//     price: 2000
-// };
-// product.price=2500
-// console.log(product.price);
-
-
-//  Print all keys and values using a loop.
-
-// let car = {
-//     brand: "Toyota",
-//     model: "Corolla",
-//     year: 2022
-// };
-
-// for(let key in car){
-//     console.log(key,car[key]);
-// }
-
-
-// 👉 Print all student names.
 
 // let students = [
-//     {name: "Ram", marks: 80},
-//     {name: "Sita", marks: 65},
-//     {name: "Hari", marks: 90}
+// {name:"Ram", marks:80},
+// {name:"Sita", marks:95},
+// {name:"Hari", marks:70}
 // ];
 
-// console.log(students[1].name);   for one key value
+// let topper = students[0];
 
 // for(let student of students){
-//     console.log(student.name);
+//     if(student.marks<topper.marks){
+//         topper = student;
+
+//     }
 // }
-
-// for (let student of students){
-//     console.log(student.marks);
-// }
+//     console.log(topper.name, topper.marks);
 
 
-// 👉 Find the total price of all items.
-
-let cart = [
-    {item: "Shoes", price: 2000},
-    {item: "Bag", price: 1500},
-    {item: "Watch", price: 3000}
+let students = [
+{name:"Ram", marks:80},
+{name:"Sita", marks:95},
+{name:"Hari", marks:70}
 ];
 
-let total = 0;
-
-for(let carts of cart){
-    total+=carts.price
-
+for(let key in students){
+    console.log(students[key].name, students[key].marks);
 
 }
-console.log("totalprice of all items:", total);
+
