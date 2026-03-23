@@ -33,14 +33,14 @@ console.log("Negative number:", negative);
 
 // findLargest(arr)
  
-let largest = numbers[0];
+// let largest = numbers[0];
 
-for(let num of numbers){
-    if(num>largest){
-        largest = num;
-    }
-}
-console.log("Largest number:", largest);
+// for(let num of numbers){
+//     if(num>largest){
+//         largest = num;
+//     }
+// }
+// console.log("Largest number:", largest);
 
 
 // Find smallest number
@@ -92,3 +92,20 @@ for(let num of numbers){
     }
 }
 console.log("Count:", count);
+
+
+// Find second largest number
+
+let largest = -Infinity;
+let secondlargest = -Infinity;
+
+for(let num of numbers){
+    if(num > largest){
+        secondlargest= largest;
+        largest= num;
+    }
+    else if(num>secondlargest && num!==largest){
+        secondlargest = num;
+    }
+}
+console.log("Second largest:", secondlargest);
