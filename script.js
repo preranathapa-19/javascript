@@ -1,111 +1,130 @@
-// Number Analyzer
-// Create functions:
-let numbers = [2, -5, 10, 0, -3, 8];
+// Bank Account System
+// This project simulates a simple bank account using only basic
+//  JavaScript (arrays, loops, conditionals, and variables)
 
-// checkEvenOdd(num)
+// Positive = deposit 
+// Negative = withdrawal
 
-for(let number of numbers){
-    if(number %2 === 0 ){
-        console.log("Even:",number);
-    }else{
-        console.log("Odd Number:", number);
+let transactions = [5000, -2000, 3000, -1000, -500, 2000];
 
+// 1. Find:
+// Total balance
+
+let total = 0;
+
+for(let tran of transactions){
+    total+=tran;
+    // transactions= total;
+}
+
+console.log("Total balance:", total);
+
+// Total deposit amount
+
+let deposit = 0;
+
+for(let tran of transactions){
+    if(tran>0){
+        deposit += tran;
     }
 }
 
-// countPositiveNegative(arr)
- 
-let positive = 0;
-let negative = 0;
+console.log("Total Deposit number:", deposit);
 
-for(let num of numbers){
-    if(num >0){
-        positive++;
-    }else if(num<0){
-        negative++;
+// Total withdrawal amount
+
+let withdrawal = 0;
+
+for(let trans of transactions){
+    if(trans<0){
+        withdrawal +=trans;
+
     }
+}
+console.log("Total withdrawal amount", withdrawal);
+
+// 2. Count:
+// Number of deposits
+// Number of withdrawals
+
+
+let depositCount = 0;
+let withdrawalCount = 0;
+
+for(let trans of transactions){
+    if(trans>0){
+        depositCount++;
+    }else if (trans<0){
+        withdrawalCount++;
+    }
+}
+console.log("Total number of deposits:", depositCount);
+console.log("Total number of withdrawal:", withdrawalCount);
+
+// 3. Advanced Logic:
+// Find largest deposit
+// Find largest withdrawal (smallest negative)
+
+let largestdeposit = 0;
+let largestwithdrawal = 0;
+
+for(let trans of transactions){
+    if(trans>0 && trans> largestdeposit){
+        largestdeposit = trans;
     }
 
-console.log("Positive number:", positive);
-console.log("Negative number:", negative);
+    if(trans < 0 && (largestwithdrawal === 0 || trans> largestwithdrawal)){
+        largestwithdrawal = trans;
+    }
+}
+
+console.log("largest  withdrawal:", largestdeposit);
+console.log("Largest withdrawal (closest to 0):", largestwithdrawal);
 
 
+// 4. Bonus Real-Life Feature:
+// 👉 Check:
+// If balance < 0 → print "Account Overdraft ⚠️"
+// Else → print "Account Safe ✅"
 
-// findLargest(arr)
- 
-// let largest = numbers[0];
 
-// for(let num of numbers){
-//     if(num>largest){
-//         largest = num;
-//     }
+// let balance = 0;
+
+// for(let trans of transactions){
+//     // balance += trans;
 // }
-// console.log("Largest number:", largest);
+//     if(balance<0){
+//         console.log("Account overdraft");
+//     } else {
+//         console.log("Account Safe");
+//     }
+// // console.log("Balance:", balance);
 
 
-// Find smallest number
+// Add:
 
-let smallest = numbers[0];
+// Find average transaction
 
-for(let num of numbers){
-    if(num<smallest){
-        smallest= num;
-    }
-}
-console.log("Smallest number:", smallest);
-
-// Count how many even numbers
-
-for(let num of numbers){
-    if(num % 2 === 0){
-        console.log("Even:", num);
-    }
-
-}
-console.log("Total Even number:", numbers);
-
-// Find sum of all numbers
-
-let sum = 0;
-
-for(let num of numbers){
-    sum+=num;
-}
-console.log("Sum:", sum);
-
-// Print numbers greater than 5
-
-for(let num of numbers){
-    if(num>5){
-        console.log("number greater than 5:", num);
-    }
-}
-
-// Count how many numbers are divisible by 2 and 5
-
+let balance = 0;
 let count = 0;
 
-for(let num of numbers){
-    if(num%2===0 && num%5===0){
-        console.log("Numbers Divisible by 2 and 5:", num);
-        count++;
+for(let trans of transactions){
+    balance += trans;
+    count++;
+}
+
+let average = balance/count;
+
+console.log("Average Transaction:", average);
+
+
+// Print transactions above 2000
+
+let above = 0;
+
+for(let trans of transactions){
+    if(trans>2000){
+        console.log("Transaction above 2000:", trans);
     }
 }
-console.log("Count:", count);
 
-
-// Find second largest number
-
-let largest = -Infinity;
-let secondlargest = -Infinity;
-
-for(let num of numbers){
-    if(num > largest){
-        secondlargest= largest;
-        largest= num;
-    }
-    else if(num>secondlargest && num!==largest){
-        secondlargest = num;
-    }
-}
-console.log("Second largest:", secondlargest);
